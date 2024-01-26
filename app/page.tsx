@@ -1,7 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { logger } from "@/logger";
 
 export default function Home() {
+  logger.info("Home Page called ");
   return (
     <main className={styles.main}>
       <div className={styles.description}>
