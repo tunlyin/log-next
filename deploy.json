@@ -1,4 +1,11 @@
 {
-    "script": "./node_modules/next/dist/bin/next",
-    "args": "start"
+    "apps": [
+        {
+            "name": "log-next",
+            "script": "./node_modules/next/dist/bin/next",
+            "env": {
+                "PORT": "3000"
+            }
+        }
+    ]
 }
